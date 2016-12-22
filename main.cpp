@@ -29,6 +29,19 @@ int main()
     std::cout<< m.i << std::endl;
     std::cout<< u.get_var<Int>().i << std::endl;
 
+    try
+    {
+        u.get_var<int>();
+    }
+    catch(ExUst &ex)
+    {
+        std::cout<<ex.message() <<std::endl;
+        //std::cout<<u.get_name_type() <<std::endl;
+
+    }
+
+
+
     std::cout << "Hello World!" << std::endl;
     return 0;
 }
