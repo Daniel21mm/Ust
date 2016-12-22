@@ -6,5 +6,6 @@ CONFIG -= qt
 SOURCES += main.cpp
 
 HEADERS += \
-    ust.h
+    ust.h \
+    exust.h
 
